@@ -1,31 +1,5 @@
-let x = 5;
-let y = 9;
-let z = x+y;
-console.log(z);
 
-const a = "Husnain"
-const b = "Haider"
-const c = a+b;
-console.log(c);
-
-let age = 19;
-if (age >= 18) {
-    console.log("Adult");    
-} else{
-    console.log("Minor");
-    
-}
-
-let number = 10;
-
-if (number % 2 ==0) {
-console.log("Even Number");
-
-}else{
-    console.log("Odd Number");
-    
-}
-
+// 1.check grades
 let marks = 70;
 
 if (marks >= 80) {
@@ -39,6 +13,7 @@ if (marks >= 80) {
     
 }
 
+// 2.use boolean 
 let age2 = 26;
 let hasCNIC = true;
 
@@ -50,6 +25,7 @@ if (age2 >=18 && hasCNIC==true){
     
 }
 
+// 3.Finding Weekend
 let day = "Sunday";
 if (day =="Saturday"|| "Sunday"){
     console.log("Weekend");    
@@ -57,6 +33,7 @@ if (day =="Saturday"|| "Sunday"){
     console.log("Working Day");    
 }
 
+// 4.Login using userName and password
 let password = "12345678"
 
 if (password.length >= 8) {
@@ -66,7 +43,7 @@ if (password.length >= 8) {
     console.log("Weak Password");
     
 }
-
+// 5.
 let age3 = 61;
 
 if (age3 >= 18) {
@@ -81,7 +58,7 @@ if (age3 >= 18) {
     console.log("Minor");
 }
 
-// is number divisble by 5  
+//6 is number divisble by 5  
 let number3 = 27;
 
 if (number3 %5 ===0) {
@@ -90,22 +67,69 @@ if (number3 %5 ===0) {
     console.log(number3 + "is not divisble by 5");
     
 }
-// check login with username and password
-let userName2 = "";
+//7 check login with username and password
+let userName2 = "admin";
 let password2 = "12345678";
 
 if (userName2 === "") {
     console.log("username required");
     
-}else if(password2.length>=8) {
-    console.log(password2 + " is Strong Password ");
+}else if(password2 === "") {
+    console.log( " Password is required ");
+    
+}else if (password2.length < 8 ){
+    console.log("Password should be at leaset 8 chracters");
     
 }else{
-    console.log("Password is Weak");
+    console.log("Login Successfuly");
     
 }
 
+//8 find largest of 3 numbers
+let a = 37;
+let b = 45;
+let c = 23;
 
+if (a > b && a > c) {
+    console.log(a + "larger than b and c");
+    
+} else if (b > a && b > c) {
+    console.log(b + "is larger than a and c");
+    
+}else{
+    console.log(c + "is larger than a and b");
+    
+}
 
+//9 Check leap year
+let year = 2024;
 
+if (year % 4 !==0) {
+    console.log(year + "is not a leap year");
+    
+}else if (year % 100 !== 0) {
+    console.log(year + " is a leap year ");
+    
+}else if (year % 400 === 0) {
+    console.log(year + " is a leap year ");
+    
+}else{
+    console.log(year +"not a leap year ")
+}
+
+//10 Traffic light system (Red / Yellow / Green)
+let light = "Green";
+if (light === "red") {
+    console.log("Stop");
+    
+}else if(light === "yellow") {
+    console.log("Ready");
+    
+} else if (light === "Green") {
+    console.log("Go");
+    
+}else{
+    console.log("invalid Color");
+    
+}
 
