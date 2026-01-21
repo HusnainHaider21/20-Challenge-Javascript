@@ -30,11 +30,21 @@ for(let i = 0; i < nums.length; i++){
 console.log(nums);
 
 //Problem 5 – Find Largest Number
+// let arr = [11, 22, 33, 44, 55, 66];
+// let largest = arr[0];
+// for(let i = 0; i < arr.length; i++){
+//   if (arr[i] > largest) {
+//     largest = arr[i]
+//   }
+// }
+// console.log(largest);
+
+// Problem 6 - find Smallest Number
 let arr = [11, 22, 33, 44, 55, 66];
-let largest = arr[0];
+let smallest = arr[0];
 for(let i = 0; i < arr.length; i++){
-  if (arr[i] > largest) {
-    largest = arr[i]
+  if (arr[i] < smallest) {
+    smallest = arr[i];
   }
 }
-console.log(largest);
+console.log(smallest);
