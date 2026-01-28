@@ -46,14 +46,4 @@ for(let i = 0; i < students.length; i++){
     }
 }
 console.log(failedStudents);
-// 🟡 Problem 4: Filter students who failed or passed using filter method
-let passedStudentsFilter = students.filter (function(students){
-   return students.marks >= 40 ;
-});
-console.log(passedStudentsFilter);
-
-let failedStudentsFilter = students.filter (function(students){
- return students.marks < 40 ; 
-});
-console.log(failedStudentsFilter);
 
